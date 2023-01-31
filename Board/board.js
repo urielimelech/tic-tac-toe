@@ -4,9 +4,9 @@ exports.Board = void 0;
 class Board {
     constructor() {
         this._board = [
-            ['', '', ''],
-            ['', '', ''],
-            ['', '', '']
+            [' ', ' ', ' '],
+            [' ', ' ', ' '],
+            [' ', ' ', ' ']
         ];
     }
     getBoard() {
@@ -25,7 +25,7 @@ class Board {
         return slant;
     }
     setItemInBoard(row, colum, player) {
-        if (this._board[row][colum] === '') {
+        if (this._board[row][colum] === ' ') {
             this._board[row][colum] = player;
         }
     }

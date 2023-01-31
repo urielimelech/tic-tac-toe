@@ -8,6 +8,10 @@ const ticTacToe = () => {
     server._server.listen(8000, () => {
         console.log('listening on port 8000')
     })
+
+    // server._io.on('newRoom', roomName => {
+    //     console.log(roomName)
+    // })
 }
 
 ticTacToe()

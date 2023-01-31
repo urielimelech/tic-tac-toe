@@ -8,16 +8,8 @@ const ticTacToe = () => {
     server._server.listen(8000, () => {
         console.log('listening on port 8000');
     });
-    server._io.on('hello', () => {
-        server._io.emit('player', 'X');
-    });
-    // server._io.listen(3000)
-    // const playerX = new player('X', board)
-    // const playerO = new player('O', board)
-    // while(!(playerX.isWinner || playerO.isWinner)){
-    //     // playerX.play(/*input*/)
-    //     // playerO.play(/*input*/)
-    // }
-    // playerX.play(0,0)
+    // server._io.on('newRoom', roomName => {
+    //     console.log(roomName)
+    // })
 };
 ticTacToe();

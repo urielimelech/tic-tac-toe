@@ -30,6 +30,6 @@ export class Player {
         return t ? t : this._board.getSlant(true).every((val: string) => val === this.sign)
     }
     isWinner(): boolean {
-        return this.hasColum() || this.hasRow() || this.hasSlant()
+        return (this.hasColum() || this.hasRow() || this.hasSlant())
     }
 }

@@ -2,9 +2,9 @@ export class Board {
     private _board: Array<string[]>
     constructor() {
         this._board = [
-            ['', '', ''],
-            ['', '', ''],
-            ['', '', '']
+            [' ', ' ', ' '],
+            [' ', ' ', ' '],
+            [' ', ' ', ' ']
         ]
     }
     getBoard() {
@@ -23,7 +23,7 @@ export class Board {
         return slant
     }
     setItemInBoard(row: number, colum: number, player: string) {
-        if (this._board[row][colum] === '') {
+        if (this._board[row][colum] === ' ') {
             this._board[row][colum] = player
         }
     }

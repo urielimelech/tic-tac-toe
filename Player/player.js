@@ -31,7 +31,7 @@ class Player {
         return t ? t : this._board.getSlant(true).every((val) => val === this.sign);
     }
     isWinner() {
-        return this.hasColum() || this.hasRow() || this.hasSlant();
+        return (this.hasColum() || this.hasRow() || this.hasSlant());
     }
 }
 exports.Player = Player;
